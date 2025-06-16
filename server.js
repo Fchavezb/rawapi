@@ -3,13 +3,15 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3000;
 
+const datosUsuario = require('./routes/usuario');
 // Middleware para parsear JSON
 app.use(express.json());
-
+app.use('/api/usuarios',datosUsuario)
+/* 
 // Base de datos simulada
 let datos = {
   id: 1,
-  nombre: 'Franklin',
+  nombre: 'Carlos',
   profesion: 'Desarrollador'
 };
 
@@ -34,7 +36,7 @@ app.delete('/api/datos', (req, res) => {
   datos = {};
   res.json({ mensaje: 'Datos eliminados correctamente' });
 });
-
+ */
 // Iniciar el servidor
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
