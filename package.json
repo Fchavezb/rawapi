@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "build": "echo \"No hay pasos en este comando\"",
     "test": "echo \"Error: Genero un error\" && exit 1"
   },
   "keywords": [],
