@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "start": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: Genero un error\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0"
   }
 }
