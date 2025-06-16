@@ -4,9 +4,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const datosUsuario = require('./routes/usuario');
+const datosProfesor = require('./routes/profesor');
 // Middleware para parsear JSON
 app.use(express.json());
 app.use('/api/usuarios',datosUsuario)
+app.use('/api/profesores',datosProfesor)
+
 /* 
 // Base de datos simulada
 let datos = {
